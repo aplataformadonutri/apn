@@ -593,6 +593,22 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
   .overview-pills span{color:#d5c9dd;background:#ffffff08;border:1px solid #ffffff14;border-radius:999px;padding:10px 15px;font-size:12px;font-weight:700}
   @media(max-width:900px){.tour-grid,.tour-grid.reverse{grid-template-columns:1fr;gap:35px}.tour-grid.reverse .tour-copy{order:1}.tour-grid.reverse .tour-shot{order:2}.tour-copy{text-align:center}.tour-copy .eyebrow{justify-content:center}.tour-list{text-align:left;max-width:620px;margin:25px auto 0}.diet-shots,.compact-tour{grid-template-columns:1fr}.diet-shots .tour-shot:last-child{max-width:780px;margin:auto}.compact-card{padding:20px}}
   @media(max-width:720px){.product-tour{padding-left:20px;padding-right:20px}.tour-heading{margin-bottom:30px}.tour-heading h2,.tour-copy h2{font-size:35px}.tour-heading>p:not(.eyebrow),.tour-copy>p:not(.eyebrow){font-size:14px}.tour-shot{padding:6px;border-radius:16px}.tour-shot img{border-radius:10px}.overview-pills{gap:7px}.overview-pills span{padding:8px 11px;font-size:10px}.compact-card h3{font-size:22px}}
+  .patient-preview-section{max-width:none;background:linear-gradient(180deg,#0e0717,#090412);padding-left:max(28px,50vw - 590px);padding-right:max(28px,50vw - 590px)}
+  .preview-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:42px}
+  .preview-card{background:#120a1d;border:1px solid #8b5cf64d;border-radius:24px;padding:10px;overflow:hidden;box-shadow:0 28px 70px #0007}
+  .preview-card img{width:100%;border-radius:16px;border:1px solid #ffffff12}
+  .preview-label{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:17px 12px 8px;font-weight:850}
+  .preview-label small{color:#a99db2;font-size:11px;font-weight:600}
+  .pdf-proof-section{background:radial-gradient(circle at 50% 45%,#6d28d927,transparent 48%),#0d0617}
+  .pdf-proof-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:48px;align-items:center}
+  .pdf-proof-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:27px}
+  .pdf-proof-highlights span{background:#ffffff08;border:1px solid #ffffff14;border-radius:14px;padding:14px;color:#c8bdcf;font-size:12px;line-height:1.45}
+  .pdf-proof-highlights b{color:#fff;display:block;margin-bottom:4px}
+  .no-monthly-badge{display:inline-flex;align-self:flex-start;margin:0 0 17px;padding:10px 15px;border:1px solid #c084fc88;border-radius:999px;background:linear-gradient(110deg,#6d28d9,#a855f7);color:#fff;letter-spacing:.08em;font-size:12px;font-weight:950;box-shadow:0 12px 32px #7c3aed55}
+  .implementation-callout{margin-top:4px!important;padding:14px!important;border:1px solid #a855f766!important;border-radius:14px;background:#7c3aed1c;color:#fff!important;font-size:12px!important;font-weight:900!important;letter-spacing:.06em;text-transform:uppercase}
+  .price-card.featured .implementation-callout{background:linear-gradient(110deg,#6d28d933,#a855f726);border-color:#c084fc99!important}
+  @media(max-width:900px){.preview-pair,.pdf-proof-grid{grid-template-columns:1fr}.pdf-proof-grid .apn-shot-frame{order:2}.pdf-proof-highlights{grid-template-columns:1fr}.pdf-proof-section .apn-special-copy{text-align:center}.pdf-proof-section .eyebrow{justify-content:center}}
+  @media(max-width:720px){.patient-preview-section{padding-left:20px;padding-right:20px}.preview-pair{grid-template-columns:1fr;gap:18px;margin-top:30px}.preview-label{align-items:flex-start;flex-direction:column}.no-monthly-badge{font-size:11px}}
 </style>
 </head>
 <body class="__variable_geist_0gku2fo __variable_geist_mono_1mkg0nh">
@@ -762,7 +778,7 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <section class="section difference" id="diferencial">
 <div class="section-heading centered">
 <p class="eyebrow">O DIFERENCIAL APN</p>
-<h2>Deixe de ser apenas mais um usuário. <em>Torne-se o Nutri que tem o próprio sistema.</em>
+<h2>Deixe de ser apenas mais um que paga mensalidade. <em>Seja o gestor do seu próprio sistema.</em>
 </h2>
 <p>Enquanto outros profissionais continuam pagando para divulgar empresas alheias, você passa a atender dentro de uma estrutura que leva o seu nome, valoriza o seu trabalho e acompanha o crescimento da sua carreira.</p>
 </div>
@@ -772,11 +788,13 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <h3>Você paga para usar a marca dos outros</h3>
 <ul>
 <li>
-<b>×</b> Logomarca da empresa</li>
+<b>×</b> Logomarca da empresa contratada</li>
 <li>
-<b>×</b> Cores e formatação limitadas</li>
+<b>×</b> Cores e formatação definidas pela empresa</li>
 <li>
 <b>×</b> Mensalidade recorrente</li>
+<li>
+<b>×</b> Quanto mais espaço utiliza, mais caro paga</li>
 <li>
 <b>×</b> Plataforma compartilhada</li>
 <li>
@@ -801,9 +819,9 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <li>
 <span class="check" aria-hidden="true">✓</span> Plataforma independente</li>
 <li>
-<span class="check" aria-hidden="true">✓</span> Sua marca e domínio</li>
-<li>
 <span class="check" aria-hidden="true">✓</span> Banco de dados sob seu controle</li>
+<li>
+<span class="check" aria-hidden="true">✓</span> O valor da APN não aumenta conforme o seu uso</li>
 <li>
 <span class="check" aria-hidden="true">✓</span> Licença definitiva de uso</li>
 </ul>
@@ -904,6 +922,23 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 </div>
 </div>
 </section>
+<section class="section product-tour patient-preview-section" aria-label="Visualização do aplicativo do paciente pelo profissional">
+<div class="tour-heading">
+<p class="eyebrow">VEJA ANTES DE PUBLICAR</p>
+<h2>Veja exatamente <em>o que o seu paciente vai receber.</em></h2>
+<p>Diretamente no painel profissional, você visualiza o aplicativo como paciente e confere dieta, horários, cálculos nutricionais e evolução antes de entregar a experiência final.</p>
+</div>
+<div class="preview-pair">
+<article class="preview-card">
+<img src="visualizacao-paciente-dieta-apn.png" alt="Visualização profissional da dieta exatamente como aparece para o paciente na APN">
+<div class="preview-label"><span>Dieta do paciente</span><small>Refeições, horários e distribuição nutricional</small></div>
+</article>
+<article class="preview-card">
+<img src="visualizacao-paciente-avaliacoes-apn.png" alt="Visualização profissional da evolução antropométrica como aparece para o paciente na APN">
+<div class="preview-label"><span>Evolução do paciente</span><small>Comparativos e histórico antropométrico</small></div>
+</article>
+</div>
+</section>
 <section class="section apn-special-section migration-section" aria-label="Migração de PDFs para a APN">
 <div class="apn-special-grid reverse">
 <div class="apn-shot-frame">
@@ -922,6 +957,24 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 </div>
 </div>
 </section>
+<section class="section apn-special-section pdf-proof-section" aria-label="Exemplos de PDFs compatíveis com a APN">
+<div class="pdf-proof-grid">
+<div class="apn-special-copy">
+<p class="eyebrow">DO PDF AO CADASTRO EM SEGUNDOS</p>
+<h2>PDFs diferentes. <em>Uma única plataforma para organizar os dados.</em></h2>
+<p>A APN lê arquivos compatíveis do HandyMet Fit, WebDiet e Dietbox e lança as informações diretamente no cadastro do paciente em poucos segundos.</p>
+<div class="pdf-proof-highlights">
+<span><b>Calorimetria</b>Exames do HandyMet Fit.</span>
+<span><b>Antropometria</b>Avaliações do WebDiet e Dietbox.</span>
+<span><b>Plano alimentar</b>Dietas do WebDiet e Dietbox.</span>
+</div>
+<small class="migration-note">Importação por PDF compatível. Não implica integração ou parceria oficial. HandyMet Fit, WebDiet e Dietbox são marcas de seus respectivos titulares.</small>
+</div>
+<div class="apn-shot-frame">
+<img src="pdfs-compativeis-apn.png" alt="Exemplos de PDFs de calorimetria, avaliação antropométrica e plano alimentar compatíveis com a APN">
+</div>
+</div>
+</section>
 <section class="section product-tour" id="recursos" aria-label="Visão completa do atendimento">
 <div class="tour-heading">
 <p class="eyebrow">SEU CONSULTÓRIO EM UM SÓ LUGAR</p>
@@ -935,7 +988,7 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <div class="tour-grid">
 <div class="tour-copy">
 <p class="eyebrow">AVALIAÇÃO SEM FÓRMULA ENGESSADA</p>
-<h2>Escolha o protocolo. <em>A APN faz os cálculos e organiza a evolução.</em></h2>
+<h2>Tenha liberdade para escolher <em>o protocolo de avaliação que mais combina com o seu paciente.</em></h2>
 <p>Realize avaliações diretamente na plataforma, selecione o protocolo adequado para cada paciente e publique os resultados em poucos segundos.</p>
 <ul class="tour-list">
 <li><i>✓</i><div><b>Três protocolos antropométricos</b>Petroski com 4 dobras e Jackson & Pollock com 3 ou 7 dobras.</div></li>
@@ -1035,6 +1088,7 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 </div>
 <div class="price-grid">
 <article class="price-card">
+<div class="no-monthly-badge">NÃO PAGA MENSALIDADE!</div>
 <p class="plan-tag">PLANO BASIC</p>
 <h3>Para quem quer começar com economia e autonomia.</h3>
 <div class="price">
@@ -1050,22 +1104,23 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <li>
 <span class="check" aria-hidden="true">✓</span>Arquivos neutros para personalização</li>
 <li>
-<span class="check" aria-hidden="true">✓</span>Queries organizadas do Supabase</li>
+<span class="check" aria-hidden="true">✓</span>Todas as linhas de código prontas para copiar e colar</li>
 <li>
-<span class="check" aria-hidden="true">✓</span>Banco de alimentos e modelos de e-mail</li>
+<span class="check" aria-hidden="true">✓</span>Banco de alimentos TACO</li>
 <li>
 <span class="check" aria-hidden="true">✓</span>Manual, tutoriais e checklist de testes</li>
 <li>
 <span class="check" aria-hidden="true">✓</span>Endereço digital alternativo, sem domínio próprio</li>
 <li>
-<span class="check" aria-hidden="true">✓</span>E-mails de confirmação e recuperação pela infraestrutura padrão</li>
-<li>
-<span class="check" aria-hidden="true">✓</span>Implantação conduzida pelo comprador</li>
+<span class="check" aria-hidden="true">✓</span>E-mails de confirmação e recuperação padronizados</li>
+<li class="implementation-callout">
+<span aria-hidden="true">→</span>Implantação conduzida pelo comprador</li>
 </ul>
 <a href="#contato" class="button button-outline">Quero o Plano Basic</a>
 </article>
 <article class="price-card featured">
 <div class="most-chosen">EXPERIÊNCIA COMPLETA</div>
+<div class="no-monthly-badge">NÃO PAGA MENSALIDADE!</div>
 <p class="plan-tag">PLANO PREMIUM</p>
 <h3>Para quem quer personalização e implantação completa.</h3>
 <div class="price">
@@ -1074,24 +1129,24 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <span>pagamento único</span>
 </div>
 <p class="payment-installments">Parcele no cartão em até 12x, com juros.</p>
-<p class="price-desc">Você recebe a plataforma personalizada, com implantação realizada pela APN, domínio próprio e e-mail comercial configurado para o seu negócio.</p>
+<p class="price-desc">Você recebe uma experiência personalizada, com implantação assessorada ao vivo, domínio próprio e comunicação configurada para o seu negócio.</p>
 <ul>
 <li>
 <span class="check" aria-hidden="true">✓</span>Plataforma completa e licença definitiva de uso</li>
 <li>
-<span class="check" aria-hidden="true">✓</span>Implantação realizada pela APN</li>
-<li>
 <span class="check" aria-hidden="true">✓</span>Análise prévia dos materiais</li>
 <li>
-<span class="check" aria-hidden="true">✓</span>Implantação da plataforma ao vivo com o profissional</li>
+<span class="check" aria-hidden="true">✓</span>Identidade visual personalizada com sua marca e suas cores</li>
 <li>
-<span class="check" aria-hidden="true">✓</span>Orientação com tela compartilhada</li>
+<span class="check" aria-hidden="true">✓</span>E-mails de confirmação e recuperação com o nome do profissional</li>
 <li>
-<span class="check" aria-hidden="true">✓</span>Validação final da configuração</li>
+<span class="check" aria-hidden="true">✓</span>Alterações de código facilitadas para futuras atualizações</li>
 <li>
 <span class="check" aria-hidden="true">✓</span>Domínio próprio contratado e pago pelo cliente</li>
 <li>
 <span class="check" aria-hidden="true">✓</span>E-mail comercial personalizado</li>
+<li class="implementation-callout">
+<span aria-hidden="true">→</span>Implantação assessorada ao vivo por um consultor</li>
 </ul>
 <a href="#contato" class="button">Quero o Plano Premium</a>
 </article>
