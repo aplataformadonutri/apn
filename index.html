@@ -612,7 +612,15 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
   .no-monthly-badge{display:inline-flex;align-self:flex-start;margin:0 0 17px;padding:10px 15px;border:1px solid #c084fc88;border-radius:999px;background:linear-gradient(110deg,#6d28d9,#a855f7);color:#fff;letter-spacing:.08em;font-size:12px;font-weight:950;box-shadow:0 12px 32px #7c3aed55}
   .implementation-callout{margin-top:4px!important;padding:14px!important;border:1px solid #a855f766!important;border-radius:14px;background:#7c3aed1c;color:#fff!important;font-size:12px!important;font-weight:900!important;letter-spacing:.06em;text-transform:uppercase}
   .price-card.featured .implementation-callout{background:linear-gradient(110deg,#6d28d933,#a855f726);border-color:#c084fc99!important}
-  @media(max-width:900px){.preview-pair,.pdf-proof-grid{grid-template-columns:1fr}.pdf-proof-grid .apn-shot-frame{order:2}.pdf-proof-highlights{grid-template-columns:1fr}.pdf-proof-section .apn-special-copy{text-align:center}.pdf-proof-section .eyebrow{justify-content:center}}
+  :root{--apn-logo:url("logo-apn.png")}
+  .stacked-feature .tour-heading{margin-bottom:34px}
+  .stacked-feature .tour-shot{max-width:1080px;margin:0 auto}
+  .feature-details-below{max-width:930px;margin:34px auto 0}
+  .feature-details-below>p{color:#aaa0b3;text-align:center;font-size:16px;line-height:1.7;margin:0 auto 26px}
+  .feature-details-below .tour-list{max-width:none;grid-template-columns:repeat(3,1fr);align-items:stretch}
+  .feature-details-below .tour-list li{background:#ffffff05;border:1px solid #ffffff12;border-radius:16px;padding:18px}
+  .pricing .section-heading h2 em{display:inline}
+  @media(max-width:900px){.preview-pair,.pdf-proof-grid{grid-template-columns:1fr}.pdf-proof-grid .apn-shot-frame{order:2}.pdf-proof-highlights{grid-template-columns:1fr}.pdf-proof-section .apn-special-copy{text-align:center}.pdf-proof-section .eyebrow{justify-content:center}.feature-details-below .tour-list{grid-template-columns:1fr}}
   @media(max-width:720px){.patient-preview-section{padding-left:20px;padding-right:20px}.preview-pair{grid-template-columns:1fr;gap:18px;margin-top:30px}.preview-label{align-items:flex-start;flex-direction:column}.no-monthly-badge{font-size:11px}}
 </style>
 </head>
@@ -961,24 +969,6 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 </div>
 </div>
 </section>
-<section class="section apn-special-section pdf-proof-section" aria-label="Exemplos de PDFs compatíveis com a APN">
-<div class="pdf-proof-grid">
-<div class="apn-special-copy centered-tour-copy">
-<p class="eyebrow">DO PDF AO CADASTRO EM SEGUNDOS</p>
-<h2>PDFs diferentes. <em>Uma única plataforma para organizar os dados.</em></h2>
-<p>A APN lê arquivos compatíveis do HandyMet Fit, WebDiet e Dietbox e lança as informações diretamente no cadastro do paciente em poucos segundos.</p>
-<div class="pdf-proof-highlights">
-<span><b>Calorimetria</b>Exames do HandyMet Fit.</span>
-<span><b>Antropometria</b>Avaliações do WebDiet e Dietbox.</span>
-<span><b>Plano alimentar</b>Dietas do WebDiet e Dietbox.</span>
-</div>
-<small class="migration-note">Importação por PDF compatível. Não implica integração ou parceria oficial. HandyMet Fit, WebDiet e Dietbox são marcas de seus respectivos titulares.</small>
-</div>
-<div class="apn-shot-frame">
-<img src="pdfs-compativeis-apn.png" alt="Exemplos de PDFs de calorimetria, avaliação antropométrica e plano alimentar compatíveis com a APN">
-</div>
-</div>
-</section>
 <section class="section product-tour" id="recursos" aria-label="Visão completa do atendimento">
 <div class="tour-heading">
 <p class="eyebrow">SEU CONSULTÓRIO EM UM SÓ LUGAR</p>
@@ -988,19 +978,19 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <div class="tour-shot wide"><img src="visao-geral-paciente-apn.png" alt="Dashboard atualizado da APN com avaliação antropométrica, plano alimentar, gasto energético, prescrições, prescrição de exames e histórico do paciente"></div>
 </section>
 
-<section class="section product-tour alt" aria-label="Avaliação antropométrica completa">
-<div class="tour-grid">
-<div class="tour-copy centered-tour-copy">
+<section class="section product-tour alt stacked-feature" aria-label="Avaliação antropométrica completa">
+<div class="tour-heading">
 <p class="eyebrow">AVALIAÇÃO SEM FÓRMULA ENGESSADA</p>
-<h2>Tenha liberdade para escolher <em>o protocolo de avaliação que mais combina com o seu paciente.</em></h2>
+<h2>Escolha o protocolo de avaliação <em>que mais combina com o seu paciente.</em></h2>
+</div>
+<div class="tour-shot wide"><img src="avaliacao-antropometrica-apn.png" alt="Tela de avaliação antropométrica com três protocolos disponíveis na APN"></div>
+<div class="feature-details-below">
 <p>Realize avaliações diretamente na plataforma, selecione o protocolo adequado para cada paciente e publique os resultados em poucos segundos.</p>
 <ul class="tour-list">
 <li><i>✓</i><div><b>Três protocolos antropométricos</b>Petroski com 4 dobras e Jackson & Pollock com 3 ou 7 dobras.</div></li>
 <li><i>✓</i><div><b>Circunferências e dados fixos</b>Registre as medidas necessárias sem repetir informações a cada consulta.</div></li>
 <li><i>✓</i><div><b>Publicação e documentos profissionais</b>Baixe uma avaliação ou o histórico e disponibilize os resultados ao paciente.</div></li>
 </ul>
-</div>
-<div class="tour-shot"><img src="avaliacao-antropometrica-apn.png" alt="Tela de avaliação antropométrica com três protocolos disponíveis na APN"></div>
 </div>
 </section>
 
@@ -1010,26 +1000,25 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <h2>Monte, ajuste e publique o plano alimentar <em>sem ficar preso a modelos engessados.</em></h2>
 <p>Organize horários, duplique refeições, ajuste alimentos e quantidades, escreva orientações e crie substituições completas com comparação automática de energia e macronutrientes.</p>
 </div>
-<div class="overview-pills"><span>Cálculo instantâneo</span><span>Refeições editáveis</span><span>Duplicação rápida</span><span>Trocas completas</span><span>Observações individuais</span><span>Refeições prontas</span></div>
 <div class="diet-shots">
 <div class="tour-shot"><img src="plano-alimentar-apn.png" alt="Editor do plano alimentar com energia, macronutrientes, horários e refeições"></div>
 <div class="tour-shot"><img src="substituicoes-plano-apn.png" alt="Editor de alimentos e substituições do plano alimentar na APN"></div>
 </div>
 </section>
 
-<section class="section product-tour alt" aria-label="Gasto energético e metas nutricionais">
-<div class="tour-grid reverse">
-<div class="tour-shot"><img src="gasto-energetico-apn.png" alt="Cálculo de gasto energético e metas de macronutrientes na APN"></div>
-<div class="tour-copy">
+<section class="section product-tour alt stacked-feature" aria-label="Gasto energético e metas nutricionais">
+<div class="tour-heading">
 <p class="eyebrow">DA ESTRATÉGIA À PRESCRIÇÃO</p>
 <h2>Calcule o gasto. Defina a estratégia. <em>Acompanhe a adequação em tempo real.</em></h2>
+</div>
+<div class="tour-shot wide"><img src="gasto-energetico-apn.png" alt="Cálculo de gasto energético e metas de macronutrientes na APN"></div>
+<div class="feature-details-below">
 <p>Estime o gasto energético, aplique déficit ou superávit e transforme a estratégia em metas integradas diretamente ao plano alimentar.</p>
 <ul class="tour-list">
 <li><i>✓</i><div><b>GET e meta energética</b>Escolha a fórmula, o nível de atividade e o ajuste necessário para cada objetivo.</div></li>
 <li><i>✓</i><div><b>Metas realmente personalizadas</b>Defina proteína, carboidrato e gordura em gramas, percentual ou g/kg.</div></li>
 <li><i>✓</i><div><b>Adequação automática</b>Compare imediatamente o que foi prescrito com o que foi planejado.</div></li>
 </ul>
-</div>
 </div>
 </section>
 
@@ -1040,18 +1029,6 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <p>Visualize todo o histórico antropométrico com data, peso, gordura corporal e peso muscular. Edite registros quando necessário e acompanhe resultados por anos.</p>
 </div>
 <div class="tour-shot wide"><img src="historico-avaliacoes-apn.png" alt="Histórico completo e ilimitado de avaliações antropométricas na APN"></div>
-</section>
-
-<section class="section product-tour alt" aria-label="Prescrições, consultas e arquivos">
-<div class="tour-heading">
-<p class="eyebrow">O ATENDIMENTO CONTINUA ORGANIZADO</p>
-<h2>Da prescrição ao retorno, <em>tudo permanece no mesmo fluxo.</em></h2>
-<p>Publique orientações, reutilize modelos profissionais, marque a próxima consulta e importe os documentos produzidos durante o atendimento.</p>
-</div>
-<div class="compact-tour">
-<article class="compact-card"><p class="eyebrow">PRESCRIÇÕES E SUPLEMENTAÇÕES</p><h3>Crie livremente ou ganhe tempo com modelos salvos.</h3><p>Defina tipo, horário e orientação mostrada ao paciente, salve estruturas recorrentes e publique tudo diretamente no aplicativo.</p><div class="tour-shot"><img src="prescricoes-apn.png" alt="Área de prescrições e suplementações da APN"></div></article>
-<article class="compact-card"><p class="eyebrow">CONSULTA E IMPORTAÇÃO</p><h3>Prepare o próximo passo sem perder informações.</h3><p>A próxima consulta aparece automaticamente no painel do paciente. Antropometria, calorimetria e dieta também podem ser importadas, com descarte dos PDFs após a leitura.</p><div class="tour-shot"><img src="consulta-arquivos-apn.png" alt="Agendamento da próxima consulta e envio de arquivos na APN"></div></article>
-</div>
 </section>
 
 <section class="section process" id="como-funciona">
@@ -1078,16 +1055,16 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 </article>
 <article>
 <b>04</b>
-<span>Implantamos ao vivo</span>
-<p>Finalizamos a configuração por videochamada, entregamos os acessos e você já pode começar a usar.</p>
+<span>Implantação assessorada</span>
+<p>A APN configura toda a estrutura com os dados enviados e entrega os acessos da plataforma pronta para começar a usar.</p>
 </article>
 </div>
 </section>
 <section class="section pricing" id="planos">
 <div class="section-heading centered">
 <p class="eyebrow">ESCOLHA COMO COMEÇAR</p>
-<h2>Um único investimento pode encerrar uma velha dependência.</h2>
-<p>Nos dois planos, a implantação é assessorada ao vivo por um consultor. Você escolhe entre uma estrutura essencial e econômica ou uma experiência ampliada, com domínio próprio e comunicação personalizada.</p>
+<h2>Um único investimento <em>pode encerrar</em> uma velha dependência.</h2>
+<p>Nos dois planos, a implantação é preparada pela APN e entregue pronta ao profissional. Você escolhe entre uma estrutura essencial e econômica ou uma experiência ampliada, com domínio próprio e comunicação personalizada.</p>
 </div>
 <div class="price-grid">
 <article class="price-card">
@@ -1167,17 +1144,17 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 <details>
 <summary>Qual é a diferença entre os dois planos?<span>+</span>
 </summary>
-<p>A plataforma, suas funcionalidades e a implantação assessorada ao vivo estão incluídas nos dois planos. No Plano Basic, você utiliza um endereço digital alternativo e os e-mails automáticos seguem o padrão da infraestrutura. No Plano Premium, a APN também configura o domínio contratado pelo cliente, o e-mail comercial e as comunicações personalizadas com o nome do profissional.</p>
+<p>A plataforma, suas funcionalidades e a implantação assessorada estão incluídas nos dois planos. No Plano Basic, você utiliza um endereço digital alternativo e os e-mails automáticos seguem o padrão da infraestrutura. No Plano Premium, a APN também configura o domínio contratado pelo cliente e as comunicações personalizadas com o nome do profissional.</p>
 </details>
 <details>
 <summary>Preciso entender de programação?<span>+</span>
 </summary>
-<p>Não. Nos dois planos, a preparação técnica é realizada pela APN e a implantação é finalizada ao vivo com você. Ao término, entregamos os acessos necessários para que você comece a utilizar sua plataforma.</p>
+<p>Não. Nos dois planos, a preparação técnica e a implantação são realizadas pela APN. Você envia os dados necessários e, ao término, recebe os acessos da plataforma pronta para começar a usar.</p>
 </details>
 <details>
-<summary>Como funciona a implantação ao vivo?<span>+</span>
+<summary>Como funciona a implantação assessorada?<span>+</span>
 </summary>
-<p>Após a confirmação da aquisição e o recebimento da sua identidade profissional, a APN prepara previamente a estrutura. Em seguida, um consultor conclui a implantação com você por videochamada, confere a configuração e entrega os acessos da sua plataforma pronta para uso.</p>
+<p>Após a confirmação da aquisição, você envia sua identidade profissional e os dados necessários. A APN prepara e configura a estrutura de forma reservada e, ao final, entrega os acessos da sua plataforma pronta para uso.</p>
 </details>
 <details>
 <summary>Posso revender ou copiar a plataforma?<span>+</span>
@@ -1197,10 +1174,10 @@ h1,h2,h3,h4,.section-heading h2,.showcase h2,.faq h2,.final-cta h2{font-weight:9
 </h2>
 <p>Dê o passo que separa quem apenas acompanha o mercado de quem constrói uma carreira com independência, autoridade e visão de futuro.</p>
 <div class="hero-actions">
-<a class="button" href="https://instagram.com/aplataformadonutri" target="_blank" rel="noreferrer">Falar com a APN</a>
+<a class="button" href="https://wa.me/5585981660065?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20ter%20a%20minha%20pr%C3%B3pria%20plataforma%20personalizada.%20Qual%20o%20pr%C3%B3ximo%20passo%3F" target="_blank" rel="noreferrer">Falar com a APN</a>
 <a class="button" href="#planos">Rever os planos</a>
 </div>
-<small>Atendimento pelo Instagram: @aplataformadonutri</small>
+<small>Atendimento pelo WhatsApp: (85) 9 8166-0065</small>
 </section>
 <footer>
 <a class="brand" href="#inicio">
